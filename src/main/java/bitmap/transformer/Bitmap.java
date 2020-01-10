@@ -3,29 +3,33 @@ package bitmap.transformer;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-public class BitMap {
-    String inputPath;
-    String outputPath;
-    private BufferedImage image;
-    private BufferedImage imageOutput;
+public class Bitmap {
 
-    public BitMap(String inputPath, String outputPath) {
+    Path outputPath;
+    BufferedImage image;
+
+    public Bitmap(String inputPath, String outputPath) {
         try {
-        this.inputPath = inputPath;
-        this.outputPath = outputPath;
-        File bmpFile = new File(inputPath);
-        this.image = ImageIO.read(bmpFile);  //image variable has height and width;
+        Path realinputPath = Paths.get(inputPath);
+        this.outputPath = Paths.get(outputPath);
+        this.image = ImageIO.read(realinputPath.toFile());  //image variable has height and width;
+            System.out.println(image);
         } catch (IOException ex) {
             System.out.println("now we cooking");
         }
     }
+
     public void negativeRGB(){
 
         int imageHeight = image.getHeight();
         int imageWidth = image.getWidth();
+
+        System.out.println("imageHeight = " + imageHeight);
+        System.out.println("imageWidth = " + imageWidth);
 
         for(int i = 0; i < imageHeight; i++){
             for(int j = 0; j < imageWidth; j++){
@@ -34,11 +38,12 @@ public class BitMap {
                 Color outputColor = new Color(255 - inputColor.getRed(),
                         255 - inputColor.getGreen(),
                         255 - inputColor.getBlue());
-                imageOutput.setRGB(i, j, outputColor.getRGB());
+                image.setRGB(i, j, outputColor.getRGB());
             }
         }
         try {
-            ImageIO.write(imageOutput, "bmp", new File(outputPath));
+            ImageIO.write(image, "bmp", outputPath.toFile());
+            System.out.println("printed to " + outputPath);
         } catch (IOException e) {
             e.printStackTrace();
         }
