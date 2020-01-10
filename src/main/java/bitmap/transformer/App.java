@@ -16,14 +16,14 @@ public class App {
     }
 
     public static void main(String[] args) {
-        readBitMap();
         System.out.println(new App().getGreeting());
+        readBitMap();
 
     }
         public static void readBitMap() {
 
-           BitMap test = new BitMap("src/main/resources/mario.bmp", "src/main/resources/output.bmp");
-            test.negativeRGB();
+           Bitmap test = new Bitmap("src/main/resources/mario.bmp", "src/main/resources/output.bmp");
+           test.negativeRGB();
         }
 
 }
