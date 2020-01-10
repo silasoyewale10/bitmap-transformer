@@ -1,6 +1,6 @@
 # bitmap-transformer
 
-# AUTHOR: SILAS OYEWALE
+# AUTHORS: SILAS OYEWALE AND PHONG DOAN
 ## Table of contents
 BitMap
 ### Java Fundamentals
