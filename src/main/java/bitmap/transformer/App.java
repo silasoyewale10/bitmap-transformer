@@ -17,13 +17,28 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        readBitMap();
+
+        String inputPath = "src/main/resources/" + args[0] + ".bmp";
+        String outputPath = "src/main/resources/" + args[1] + ".bmp";
+        String transformationType = args[2].toLowerCase();
+
+        Bitmap test = new Bitmap(inputPath, outputPath);
+
+       switch (transformationType) {
+            case "invert" :
+                test.negativeRGBTransformation();
+                break;
+            case "grayscale" :
+                test.grayscaleTransformation();
+                break;
+            case "mirror" :
+                test.mirroredTransformation();
+                break;
+            default :
+                System.out.println("IYour transformation request is denied. Please pick: 'invert', 'greyscale', 'mirror'");
+        }
 
     }
-        public static void readBitMap() {
 
-           Bitmap test = new Bitmap("src/main/resources/mario.bmp", "src/main/resources/output.bmp");
-           test.negativeRGB();
-        }
 
 }
