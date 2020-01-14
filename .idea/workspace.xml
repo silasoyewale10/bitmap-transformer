@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c3095bd4-4a40-4709-84ca-fe7c2295dbb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -24,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="42" column="4" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="42" selection-end-column="4" />
+            <state relative-caret-position="316">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
@@ -156,7 +155,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578975270210" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578975453354" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -251,10 +250,12 @@
     <history-entry file="AppTest_testApp_grayscale - 2020.01.13 at 20h 12m 23s.xml">
       <configuration name="AppTest.testApp_grayscale" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_testApp_grayscale - 2020.01.13 at 20h 13m 02s.xml">
+      <configuration name="AppTest.testApp_grayscale" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="42" width="1400" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26435935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -265,13 +266,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988167" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32988167" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32988167" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32988167" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32988167" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32988167" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32988167" />
@@ -322,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="42" column="4" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="42" selection-end-column="4" />
+        <state relative-caret-position="316">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
