@@ -3,17 +3,42 @@
  */
 package bitmap.transformer;
 
+import org.junit.Before;
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class AppTest {
+
+    Bitmap testBitMap;
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
 
-    @Test public void testApp_arguments(){
-        
+    @Before
+    public void setup(){
+        testBitMap = new Bitmap("src/main/resources/mario.bmp", "src/main/resources/outputTest.bmp");
     }
+
+
+    @Test public void testApp_grayscale() throws IOException {
+        testBitMap.grayscaleTransformation();
+        Path outputTestPath = Paths.get("src/main/resources/outputTest.bmp");
+        BufferedImage testedImage = ImageIO.read(outputTestPath.toFile());
+        Color inputColor = new Color(testedImage.getRGB(50,50));
+        assertEquals("It has been greyed", 89, inputColor.getRed());
+        assertEquals("It has been greyed", 89, inputColor.getBlue());
+        assertEquals("It has been greyed", 89, inputColor.getGreen());
+
+    }
+
 }
