@@ -33,7 +33,7 @@ public class AppTest {
 
     @Test public void testApp_grayscale() throws IOException {
         testBitMap.grayscaleTransformation();
-        Path outputTestPath = Paths.get("src/main/resources/output.bmp");
+        Path outputTestPath = Paths.get("src/main/resources/outputTest.bmp");
         BufferedImage testedImage = ImageIO.read(outputTestPath.toFile());
         Color inputColor = new Color(testedImage.getRGB(50,50));
 
@@ -43,22 +43,19 @@ public class AppTest {
 
     }
     @Test public void testnegativeRGBTransformation() throws IOException {
-        Bitmap obj = new Bitmap("src/main/resources/mario.bmp", "src/main/resources/outputTest.bmp");
-        obj.negativeRGBTransformation();
+        testBitMap.negativeRGBTransformation();
         Path outputTestPath = Paths.get("src/main/resources/outputTest.bmp");
         BufferedImage testedImage = ImageIO.read(outputTestPath.toFile());
         Color inputColor = new Color(testedImage.getRGB(80,50));
         
-        assertEquals("It has been greyed", 0, inputColor.getRed());
-        assertEquals("It has been greyed", 2, inputColor.getBlue());
-        assertEquals("It has been greyed", 3, inputColor.getGreen());
+        assertEquals("It has been inverted", 0, inputColor.getRed());
+        assertEquals("It has been inverted", 2, inputColor.getBlue());
+        assertEquals("It has been inverted", 3, inputColor.getGreen());
 
     }
     @Test public void mirroredTransformation() throws IOException {
-        Bitmap obj2 = new Bitmap("src/main/resources/mario.bmp", "src/main/resources/test.bmp");
-        obj2.mirroredTransformation();
-
-        Path outputTestPath = Paths.get("src/main/resources/test.bmp");
+        testBitMap.mirroredTransformation();
+        Path outputTestPath = Paths.get("src/main/resources/outputTest.bmp");
         BufferedImage testedImage = ImageIO.read(outputTestPath.toFile());
         ByteArrayOutputStream arr = new ByteArrayOutputStream(9);
 //          System.out.println( testedImage.getRGB(9,8));
