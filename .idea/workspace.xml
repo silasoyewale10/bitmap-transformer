@@ -353,22 +353,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="554" y="358" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1579010224290" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1579012673926">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1579014303477">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579012673926" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1579012673919">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579014303477" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1579014303476">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579012673919" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1579012673919">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579014303476" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1579014303475">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579012673919" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1579012673925">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579014303475" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1579014303476">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579012673925" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579014303476" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java">
